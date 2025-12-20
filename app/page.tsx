@@ -14,18 +14,18 @@ export default function Home() {
           priority
         />
         <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
+          <h1 className="max-w-xs text-2xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
             Hello! My name is Joon Lin.
           </h1>
           <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-           I am a university student, and here is my 
+           I am a student currently studying at the University of Sydney, and here is my 
             <a
               href="https://www.linkedin.com/in/joonlinchan156/"
               className="font-medium text-zinc-950 dark:text-zinc-50"
             >{" "}
                Linkedin
             </a>{" "}
-            or {" "}
+            and my {" "}
             <a
               href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
               className="font-medium text-zinc-950 dark:text-zinc-50"
@@ -48,7 +48,7 @@ export default function Home() {
               width={16}
               height={16}
             />
-            Deploy Now
+            View my Resume
           </a>
           <a
             className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
