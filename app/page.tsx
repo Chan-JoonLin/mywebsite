@@ -30,14 +30,16 @@ export default function Home() {
               href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
               className="font-medium text-zinc-950 dark:text-zinc-50"
             >
-              Instagram
+              Instagram.
             </a>{" "}
           </p>
+          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
+          Throughout my studies I have had the opportunity to work on various projects, from robot callibration to building circuits to video game design.
         </div>
         <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
           <a
             className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            href="https://docs.google.com/document/d/18rq30SDzDgOsDPSV6NBt6qKrlvO_7B8u/edit?usp=sharing&ouid=110862824482583026058&rtpof=true&sd=true&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
             target="_blank"
             rel="noopener noreferrer"
           >
