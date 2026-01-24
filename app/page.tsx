@@ -30,9 +30,7 @@ c          <h1 className="max-w-xs text-2xl font-semibold leading-10 tracking-ti
               className="font-medium text-zinc-950 dark:text-zinc-50"
             >
               Instagram.
-            </a>{" "}
-          </p>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
+            
           Throughout my studies I have had the opportunity to work on various projects, from robot callibration to building circuits to video game design.
         </div>
         <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
