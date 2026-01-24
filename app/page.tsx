@@ -13,8 +13,7 @@ export default function Home() {
           height={100}
           priority
         />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-2xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
+c          <h1 className="max-w-xs text-2xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
             Hello! My name is Joon Lin.
           </h1>
           <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
@@ -61,6 +60,40 @@ export default function Home() {
             Documentation
           </a>
         </div>
+    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
+      These photos illustrate my journey throughout 2025 - starting when I recieved news of my offer at the University of Sydney.
+                  <Image
+              className="dark:invert"
+              src="/20160125_123052.jpg"
+              alt="photo1"
+              width={160}
+              height={160}
+            />            <Image
+              className="dark:invert"
+              src="/20211202_165153.jpg"
+              alt="photo2"
+              width={160}
+              height={160}
+            />            <Image
+              className="dark:invert"
+              src="/20250101_070129.jpg"
+              alt="photo3"
+              width={160}
+              height={160}
+            />            <Image
+              className="dark:invert"
+              src="/20250213_124338.jpg"
+              alt="photo4"
+              width={160}
+              height={160}
+            />            <Image
+              className="dark:invert"
+              src="/20251213_183258.jpg"
+              alt="photo5"
+              width={160}
+              height={160}
+            />
+    </div>
         </div>
       </main>
     </div>
