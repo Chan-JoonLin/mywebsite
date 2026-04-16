@@ -2,24 +2,23 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
+    <div className="flex justify-center bg-zinc-50 font-sans dark:bg-black">
+      <main className="w-full max-w-4xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
         {/* Top section: intro + headshot */}
-        <div className="flex items-center flex-col gap-6">
-          <Image
-            className=""
-            src="/myhead.jpg"
-            alt="My Face"
-            width={400}
-            height={100}
-            priority
-          />
+        <div className="flex flex-col lg:flex-row lg:items-center lg:gap-12">
+  <Image
+    src="/myhead.jpg"
+    alt="My Face"
+    width={350}
+    height={350}
+    className="rounded-xl"
+  />
 
-          <h1 className="max-w-xs text-2xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            Hello! My name is Joon Lin.
-          </h1>
-
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
+  <div className="mt-6 lg:mt-0 max-w-xl">
+    <h1 className="text-3xl lg:text-4xl font-semibold">
+      Hello! My name is Joon Lin.
+    </h1>
+    <p className="mt-4 text-lg lg:text-xl text-zinc-600 dark:text-zinc-400">
             I am a student currently studying at the University of Sydney, and
             here is my
             <a
@@ -89,28 +88,28 @@ export default function Home() {
 
           <div className="flex flex-wrap gap-4">
             <Image
-              className="dark:invert"
+              className="invert dark:invert-0"
               src="/20160125_123052.jpg"
               alt="photo1"
               width={160}
               height={160}
             />
             <Image
-              className="dark:invert"
+              className="invert dark:invert-0"
               src="/20211202_165153.jpg"
               alt="photo2"
               width={160}
               height={160}
             />
             <Image
-              className="dark:invert"
+              className="invert dark:invert-0"
               src="/20250101_070129.jpg"
               alt="photo3"
               width={160}
               height={160}
             />
             <Image
-              className="dark:invert"
+              className="invert dark:invert-0"
               src="/20250213_124338.jpg"
               alt="photo4"
               width={160}
