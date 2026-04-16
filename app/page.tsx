@@ -117,7 +117,7 @@ export default function Home() {
               height={160}
             />
             <Image
-              className="dark:invert"
+              className="invert dark:invert-0"
               src="/20251213_183258.jpg"
               alt="photo5"
               width={160}
@@ -129,7 +129,7 @@ export default function Home() {
         {/* EXTRA TEXT SLOT 3: closing / call to action */}
         <section className="mt-16 w-full">
           <p className="text-base leading-7 text-zinc-700 dark:text-zinc-300">
-            {/* Replace this comment with a closing paragraph – e.g. what you're looking for (internships, collaborations, etc.). */}
+            I look forward to getting an internship during my term break!
           </p>
         </section>
       </main>
