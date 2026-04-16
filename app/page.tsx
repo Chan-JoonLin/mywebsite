@@ -2,77 +2,38 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="w-full max-w-4xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        {/* Top section: intro + headshot */}
-        <div className="flex flex-col lg:flex-row lg:items-center lg:gap-12">
-  <Image
-    src="/myhead.jpg"
-    alt="My Face"
-    width={350}
-    height={350}
-    className="rounded-xl"
-  />
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start w-full max-w-6xl">
+  {/* LEFT COLUMN — Photo */}
+  <div className="flex justify-center lg:justify-start">
+    <Image
+      src="/myhead.jpg"
+      alt="My Face"
+      width={400}
+      height={400}
+      className="rounded-xl"
+      priority
+    />
+  </div>
 
-  <div className="mt-6 lg:mt-0 max-w-xl">
-    <h1 className="text-3xl lg:text-4xl font-semibold">
+  {/* RIGHT COLUMN — Text */}
+  <div className="flex flex-col gap-6">
+    <h1 className="text-3xl lg:text-4xl font-semibold text-black dark:text-zinc-50">
       Hello! My name is Joon Lin.
     </h1>
-    <p className="mt-4 text-lg lg:text-xl text-zinc-600 dark:text-zinc-400">
-            I am a student currently studying at the University of Sydney, and
-            here is my
-            <a
-              href="https://www.linkedin.com/in/joonlinchan156/"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              {" "}
-              Linkedin
-            </a>
-            {" "}and my{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Instagram.
-            </a>
-          </p>
 
-          {/* EXTRA TEXT SLOT 1: about you / summary */}
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            {/* Replace this comment with more intro text about yourself, your interests, goals, etc. */}
-            Throughout my studies I have had the opportunity to work on various
-            projects, from robot calibration to building circuits to video game
-            design.
-          </p>
-        </div>
+    <p className="text-lg leading-8 text-zinc-600 dark:text-zinc-400">
+      I am a student currently studying at the University of Sydney. Here is my
+      <a href="https://www.linkedin.com/in/joonlinchan156/" className="font-medium text-black dark:text-zinc-50"> LinkedIn</a>
+      {" "}and my
+      <a href="https://instagram.com" className="font-medium text-black dark:text-zinc-50"> Instagram</a>.
+    </p>
 
-        {/* Buttons section */}
-        <div className="mt-10 flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://docs.google.com/document/d/18rq30SDzDgOsDPSV6NBt6qKrlvO_7B8u/edit?usp=sharing&ouid=110862824482583026058&rtpof=true&sd=true&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            View my Resume
-          </a>
+    <p className="text-lg leading-8 text-zinc-600 dark:text-zinc-400">
+      Throughout my studies I have worked on projects ranging from robot calibration to circuit design to game development.
+    </p>
+  </div>
+</div>
 
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
 
         {/* Photos section */}
         <section className="mt-16 w-full">
