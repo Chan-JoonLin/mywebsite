@@ -24,7 +24,7 @@ export default function Home() {
     <p className="text-lg leading-8 text-zinc-600 dark:text-zinc-400">
       I am a student currently studying at the University of Sydney. Here is my
       <a href="https://www.linkedin.com/in/joonlinchan156/" className="font-medium text-black dark:text-zinc-50"> LinkedIn</a>
-      {" "}and my
+      , my <a href="jlbear156@gmail.com" className="font-medium text-black dark:text-zinc-50"> email </a>and my
       <a href="https://instagram.com" className="font-medium text-black dark:text-zinc-50"> Instagram</a>.
     </p>
 
@@ -32,7 +32,6 @@ export default function Home() {
       Throughout my studies I have worked on projects ranging from robot calibration to circuit design to game development.
     </p>
   </div>
-</div>
 
 
         {/* Photos section */}
